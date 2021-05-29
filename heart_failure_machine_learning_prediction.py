@@ -60,11 +60,11 @@ HF=files.upload()
 import io
 HF = pd.read_csv(io.BytesIO(HF["heart_failure_clinical_records_dataset.csv"]))
 
-pip install plotly
+#pip install plotly
 
-pip install -U seaborn
+#pip install -U seaborn
 
-pip install xgboost
+#pip install xgboost
 
 HF.head()
 
@@ -571,19 +571,19 @@ pickle_out.close()
 # if __name__=='__main__': 
 #     main()
 
-!streamlit run app.py &>/dev/null&
+#!streamlit run app.py &>/dev/null&
 
-!git init
+#!git init
 
-!mkdir -p ~/.streamlit/
+#!mkdir -p ~/.streamlit/
 
-!echo "\
-[server]\n\
-headless = true\n\
-port = $PORT\n\
-enableCORS = false\n\
-\n\
-" > ~/.streamlit/config.toml
+#!echo "\
+#[server]\n\
+#headless = true\n\
+#port = $PORT\n\
+#enableCORS = false\n\
+#\n\
+#" > ~/.streamlit/config.toml
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile requirements.txt
@@ -597,17 +597,17 @@ enableCORS = false\n\
 
 """This  to install Heroku"""
 
-!curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+#!curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 """Or the 2 cells of code below;"""
 
-!sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#!sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-!brew install heroku/brew/heroku
+#!brew install heroku/brew/heroku
 
-!heroku login -i
+#!heroku login -i
 
-!heroku create #input_your_app_name (it'd look like this: app_name.)
+#!heroku create #input_your_app_name (it'd look like this: app_name.)
 
 from pyngrok import ngrok
  
